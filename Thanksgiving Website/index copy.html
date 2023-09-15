@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>The Ultimate Thanksgiving Website</title>
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen", charset="utf-8">
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="about-me.html">About Me</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="party-invites.html">Party Invites</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="shopping-list.html">Shopping List</a></li>
+                    <li><a href="task.html">To Do App</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="Homepage-title">
+            <h1>The Ultimate Thanksgiving Website</h1> 
+        </div>  
+        <div id='countdown-div'>  
+            <p id="countdown"></p>
+            <script>
+                //set date
+                var countDownDate = new Date('November 23,2023 12:00:00').getTime();
+
+                //update every 1 second
+                var x = setInterval(function() {
+                    //get todays date and time
+                    var now= new Date().getTime();
+
+                    //find distance between now and countdown
+                    var distance = countDownDate - now
+
+                    //time  calculations for days, hours, minutes and seconds
+
+                    var days = Math.floor(distance/ (1000 * 60 * 60 *24));
+                    var hours = Math.floor((distance % (1000 *60*60*24)) / (1000 * 60 *60));
+                    var  minutes = Math.floor((distance % (1000 *60 *60))/ (1000 *60));
+                    var seconds = Math.floor((distance % (1000 *60))/ 1000);
+
+                    //display the result in the element with id=countdown
+                    document.getElementById('countdown').innerHTML = days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
+
+                    if (distance < 0) {
+                        clearInterval(x)
+                        document.getElementById('countdown').innerHTML ="Happy Thanksgiving"
+                    }
+                }, 1000);
+            </script>
+        </div>
+
+    </body>
+</html>

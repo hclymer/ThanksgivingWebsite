@@ -1,18 +1,43 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <title>Shopping List - The Ultimate Thanksgiving Website</title>
-    </head>
-    <body>
-        <h1>Shopping list</h1> 
-
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-
-
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="groceries.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="stylesheet.css"> -->
+    <title>Grocery List</title>
+  </head>
+  <body>
+    <div class="navbar">
+        <nav>
+          <ul class="nav_links">
+            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="party-invites.html">Party Invites</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="shopping-list.html">Shopping List</a></li>
+            <li><a href="task.html">To Do App</a></li>
+          </ul>
+        </nav>
+      </div>
+    <div class="container">
+      <div class="groceries">
+        <h1 style="text-align: center">Grocery List</h1>
+        <br />
+        <div style="text-align: center">
+          <i id="pencil" class="fas fa-pencil-alt"></i
+          ><input type="text" id="userInput" />
+        </div>
+        <br />
+        <div id="allItems"></div>
+      </div>
+    </div>
+    <script src="scripts/GLscript.js"></script>
+  </body>
 </html>

@@ -1,0 +1,140 @@
+/* Navbar */
+.navbar ul {
+    background-color: #7b904b;
+    margin: 20px;
+    padding: 10px;
+    font-family: sans-serif;
+    list-style-type: none;
+    overflow: hidden;
+  }
+  
+.navbar li {
+    /* display: inline; */
+    /* padding: 5px; */
+    float: left;
+  }
+  
+.navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.navbar li a:hover {
+    background-color: #f47d18;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;   
+}
+
+body {
+    background-color: #f47d18;
+}
+
+.todo-container{
+    width: 100%;
+    min-height: 100vh;
+    background: #f47d18;
+    padding: 10px;            
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px ;
+    padding: 40px 30px 70px;
+    border-radius: 10px;    
+}
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.todo-app h2 img{
+    width: 40px;
+    margin-left: 10px;
+}
+
+.todo-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0 ;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.todo-container input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px ;
+}
+.todo-container button{
+    border: none;
+    outline: none;
+    padding: 16px 50px; 
+    background: #7b904b;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.todo-container ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 18px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.todo-container ul li::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(images/uncheck.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+}
+
+.todo-container ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+.todo-container ul li.checked::before{
+    background-image: url(images/check.png);
+    
+}
+
+.todo-container ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+.todo-container ul li span:hover{
+    background:#edeef0 ;
+}
+

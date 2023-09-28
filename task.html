@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Task List - The Ultimate Thanksgiving Website</title>
+        <link rel="stylesheet" href="todo_style.css" type="text/css" media="screen", charset="utf-8">
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="about-me.html">About Me</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="party-invites.html">Party Invites</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="shopping-list.html">Shopping List</a></li>
+                    <li><a href="task.html">To Do App</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="todo-container">
+            <div class="todo-app">
+                <h2>Task list <img src="images/task.png"></h2> 
+                <div class="todo-row">
+                    <input type="text" id="input-box" placeholder="Add your text here">
+                    <button onclick="addTask()">Add</button>                                        
+                </div>
+                <ul id="list-container">
+                    
+                </ul>                
+            </div>
+            <script src="scripts/ToDoscript.js"></script>
+    </body>
+</html>
